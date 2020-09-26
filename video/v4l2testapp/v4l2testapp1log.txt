@@ -1,0 +1,4 @@
+pips@pips-Aspire-5336:~/Desktop/videoT/TSHtraining/v4l2testapp$ ./v4l2test1
+test_video_open
+test_video_close
+

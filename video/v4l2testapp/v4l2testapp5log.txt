@@ -1,0 +1,204 @@
+pips@pips-Aspire-5336:~/Desktop/videoT/TSHtraining/v4l2testapp$ ./v4l2test5 
+test_video_open
+test_video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: 1.3M HD WebCam: 1.3M HD WebCam (usb-0000:00:1d.7-4).
+video_set_format:
+video_set_format:VIDIOC_S_FMT
+Video format set: width: 640 height: 480 buffer size: 614400
+video_set_framerate
+Setting frame rate to: 1/30
+video_set_framerate:VIDIOC_S_PARAM
+Frame rate set: 1/30
+video_prepare_capture
+video_alloc_buffers:VIDIOC_REQBUFS
+10 buffers requested.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 0
+Buffer 0 mapped at address 0x7fdec2fcc000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 614400
+Buffer 1 mapped at address 0x7fdec2f36000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 1228800
+Buffer 2 mapped at address 0x7fdec2ea0000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 1843200
+Buffer 3 mapped at address 0x7fdec2e0a000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 2457600
+Buffer 4 mapped at address 0x7fdec2d74000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 3072000
+Buffer 5 mapped at address 0x7fdec2cde000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 3686400
+Buffer 6 mapped at address 0x7fdec2c48000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 4300800
+Buffer 7 mapped at address 0x7fdec2bb2000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 4915200
+Buffer 8 mapped at address 0x7fdec2b1c000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 614400 offset: 5529600
+Buffer 9 mapped at address 0x7fdec2a86000.
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture
+video_enable:enable ? VIDIOC_STREAMON : VIDIOC_STREAMOFF
+video_do_capture:VIDIOC_DQBUF
+0 (0) [-] 0 614400 bytes 9695.027634 1600840695.921478
+video_do_capture:VIDIOC_DQBUF
+1 (1) [-] 1 614400 bytes 9695.059645 1600840695.957423
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+2 (2) [-] 2 614400 bytes 9695.095638 1600840695.989447
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+3 (3) [-] 3 614400 bytes 9695.127645 1600840696.021467
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+4 (4) [-] 4 614400 bytes 9695.159654 1600840696.057451
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+5 (5) [-] 5 614400 bytes 9695.195656 1600840696.089475
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+6 (6) [-] 6 614400 bytes 9695.227666 1600840696.121495
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+7 (7) [-] 7 614400 bytes 9695.263667 1600840696.157460
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+8 (8) [-] 8 614400 bytes 9695.295666 1600840696.189484
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+9 (9) [-] 9 614400 bytes 9695.327675 1600840696.225457
+video_queue_buffer:VIDIOC_QBUF
+video_enable:enable ? VIDIOC_STREAMON : VIDIOC_STREAMOFF
+test_video_close
+
+
+
+
+
+
+
+pips@pips-Aspire-5336:~/Desktop/videoT/TSHtraining/v4l2testapp$ dmesg
+[ 9694.353914] video0: VIDIOC_QUERYCAP: driver=uvcvideo, card=1.3M HD WebCam: 1.3M HD WebCam, bus=usb-0000:00:1d.7-4, version=0x0005042c, capabilities=0x84a00001, device_caps=0x04200001
+[ 9694.380992] video0: VIDIOC_S_FMT: type=vid-cap, width=640, height=480, pixelformat=YUYV, field=none, bytesperline=1280, sizeimage=614400, colorspace=8, flags=0x0, ycbcr_enc=0, quantization=0, xfer_func=0
+[ 9694.408236] video0: VIDIOC_S_PARM: type=vid-cap, capability=0x0, capturemode=0x0, timeperframe=1/30, extendedmode=0, readbuffers=0
+[ 9694.408477] videobuf2_common: __setup_offsets: buffer 0, plane 0 offset 0x00000000
+[ 9694.408713] videobuf2_common: __setup_offsets: buffer 1, plane 0 offset 0x00096000
+[ 9694.408993] videobuf2_common: __setup_offsets: buffer 2, plane 0 offset 0x0012c000
+[ 9694.409289] videobuf2_common: __setup_offsets: buffer 3, plane 0 offset 0x001c2000
+[ 9694.412459] videobuf2_common: __setup_offsets: buffer 4, plane 0 offset 0x00258000
+[ 9694.412650] videobuf2_common: __setup_offsets: buffer 5, plane 0 offset 0x002ee000
+[ 9694.412885] videobuf2_common: __setup_offsets: buffer 6, plane 0 offset 0x00384000
+[ 9694.413184] videobuf2_common: __setup_offsets: buffer 7, plane 0 offset 0x0041a000
+[ 9694.413484] videobuf2_common: __setup_offsets: buffer 8, plane 0 offset 0x004b0000
+[ 9694.414588] videobuf2_common: __setup_offsets: buffer 9, plane 0 offset 0x00546000
+[ 9694.414591] videobuf2_common: __vb2_queue_alloc: allocated 10 buffers, 1 plane(s) each
+[ 9694.414594] video0: VIDIOC_REQBUFS: count=10, type=vid-cap, memory=mmap
+[ 9694.414893] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=0, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x0, length=614400
+[ 9694.414899] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.415044] videobuf2_common: vb2_mmap: buffer 0, plane 0 successfully mapped
+[ 9694.415251] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=1, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x96000, length=614400
+[ 9694.415257] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.415389] videobuf2_common: vb2_mmap: buffer 1, plane 0 successfully mapped
+[ 9694.415589] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=2, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x12c000, length=614400
+[ 9694.415594] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.415710] videobuf2_common: vb2_mmap: buffer 2, plane 0 successfully mapped
+[ 9694.416153] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=3, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x1c2000, length=614400
+[ 9694.416159] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.416197] videobuf2_common: vb2_mmap: buffer 3, plane 0 successfully mapped
+[ 9694.416355] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=4, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x258000, length=614400
+[ 9694.416361] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.416399] videobuf2_common: vb2_mmap: buffer 4, plane 0 successfully mapped
+[ 9694.419694] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=5, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x2ee000, length=614400
+[ 9694.419703] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.419750] videobuf2_common: vb2_mmap: buffer 5, plane 0 successfully mapped
+[ 9694.419825] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=6, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x384000, length=614400
+[ 9694.419831] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.419864] videobuf2_common: vb2_mmap: buffer 6, plane 0 successfully mapped
+[ 9694.419933] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=7, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x41a000, length=614400
+[ 9694.419938] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.420020] videobuf2_common: vb2_mmap: buffer 7, plane 0 successfully mapped
+[ 9694.420090] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=8, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x4b0000, length=614400
+[ 9694.420095] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.420128] videobuf2_common: vb2_mmap: buffer 8, plane 0 successfully mapped
+[ 9694.420197] video0: VIDIOC_QUERYBUF: 00:00:00.00000000 index=9, type=vid-cap, request_fd=0, flags=0x00012000, field=any, sequence=0, memory=mmap, bytesused=0, offset/userptr=0x546000, length=614400
+[ 9694.420202] timecode=00:00:00 type=0, flags=0x00000000, frames=0, userbits=0x00000000
+[ 9694.420278] videobuf2_common: vb2_mmap: buffer 9, plane 0 successfully mapped
+[ 9694.420771] videobuf2_common: vb2_core_qbuf: qbuf of buffer 0 succeeded
+[ 9694.421198] videobuf2_common: vb2_core_qbuf: qbuf of buffer 1 succeeded
+[ 9694.421633] videobuf2_common: vb2_core_qbuf: qbuf of buffer 2 succeeded
+[ 9694.426170] videobuf2_common: vb2_core_qbuf: qbuf of buffer 3 succeeded
+[ 9694.426558] videobuf2_common: vb2_core_qbuf: qbuf of buffer 4 succeeded
+[ 9694.427015] videobuf2_common: vb2_core_qbuf: qbuf of buffer 5 succeeded
+[ 9694.427483] videobuf2_common: vb2_core_qbuf: qbuf of buffer 6 succeeded
+[ 9694.427916] videobuf2_common: vb2_core_qbuf: qbuf of buffer 7 succeeded
+[ 9694.428355] videobuf2_common: vb2_core_qbuf: qbuf of buffer 8 succeeded
+[ 9694.428797] videobuf2_common: vb2_core_qbuf: qbuf of buffer 9 succeeded
+[ 9694.434812] videobuf2_common: vb2_core_streamon: successful
+[ 9694.434817] video0: VIDIOC_STREAMON: type=vid-cap
+[ 9694.435010] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.060021] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.060026] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 0, with state 0
+[ 9695.060791] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.095979] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.095985] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 1, with state 0
+[ 9695.096868] videobuf2_common: vb2_core_qbuf: qbuf of buffer 1 succeeded
+[ 9695.096877] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.128003] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.128009] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 2, with state 0
+[ 9695.128886] videobuf2_common: vb2_core_qbuf: qbuf of buffer 2 succeeded
+[ 9695.128895] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.160023] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.160029] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 3, with state 0
+[ 9695.160866] videobuf2_common: vb2_core_qbuf: qbuf of buffer 3 succeeded
+[ 9695.160876] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.196008] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.196013] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 4, with state 0
+[ 9695.196851] videobuf2_common: vb2_core_qbuf: qbuf of buffer 4 succeeded
+[ 9695.196860] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.228032] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.228038] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 5, with state 0
+[ 9695.228874] videobuf2_common: vb2_core_qbuf: qbuf of buffer 5 succeeded
+[ 9695.228882] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.260052] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.260057] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 6, with state 0
+[ 9695.260899] videobuf2_common: vb2_core_qbuf: qbuf of buffer 6 succeeded
+[ 9695.260908] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.296016] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.296022] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 7, with state 0
+[ 9695.296855] videobuf2_common: vb2_core_qbuf: qbuf of buffer 7 succeeded
+[ 9695.296864] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.328040] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.328046] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 8, with state 0
+[ 9695.328881] videobuf2_common: vb2_core_qbuf: qbuf of buffer 8 succeeded
+[ 9695.328889] videobuf2_common: __vb2_wait_for_done_vb: will sleep waiting for buffers
+[ 9695.364014] videobuf2_common: vb2_core_dqbuf: returning done buffer
+[ 9695.364020] videobuf2_common: vb2_core_dqbuf: dqbuf of buffer 9, with state 0
+[ 9695.364908] videobuf2_common: vb2_core_qbuf: qbuf of buffer 9 succeeded
+[ 9695.396147] videobuf2_common: vb2_core_streamoff: successful
+[ 9695.396152] video0: VIDIOC_STREAMOFF: type=vid-cap
+[ 9695.396505] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 0
+[ 9695.396527] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 1
+[ 9695.396550] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 2
+[ 9695.396574] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 3
+[ 9695.396592] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 4
+[ 9695.396613] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 5
+[ 9695.396631] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 6
+[ 9695.396648] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 7
+[ 9695.396669] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 8
+[ 9695.396686] videobuf2_common: __vb2_buf_mem_free: freed plane 0 of buffer 9
+

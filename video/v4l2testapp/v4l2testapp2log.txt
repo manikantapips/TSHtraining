@@ -1,0 +1,13 @@
+pips@pips-Aspire-5336:~/Desktop/videoT/TSHtraining/v4l2testapp$ ./v4l2test2
+test_video_open
+video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: 1.3M HD WebCam: 1.3M HD WebCam (usb-0000:00:1d.7-4).
+test_video_close
+
+
+
+
+
+pips@pips-Aspire-5336:~/Desktop/videoT/TSHtraining/v4l2testapp$ dmesg
+[ 3617.548213] video0: VIDIOC_QUERYCAP: driver=uvcvideo, card=1.3M HD WebCam: 1.3M HD WebCam, bus=usb-0000:00:1d.7-4, version=0x0005042c, capabilities=0x84a00001, device_caps=0x04200001
+
