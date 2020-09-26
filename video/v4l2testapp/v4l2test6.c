@@ -101,11 +101,11 @@ static int video_free_buffers(struct device *dev);
 /*open the device *devname= "/dev/video0" which is passed by user as parameter and also query the capability of devices i.e hardware specific informationn like name of device and type.*/ 
 static int test_video_open(struct device *dev, const char *devname, int no_query)
 {
-	struct v4l2_capability cap;       
-	int ret;
+	struct v4l2_capability cap;       //this variable is passed as argument quarycap ioctl
+	int ret;                          //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L441
 
 	
-	dev->fd = open(devname, O_RDWR);
+	dev->fd = open(devname, O_RDWR);      //dev->fd open video0 in read and write mode
 	if (dev->fd < 0) {
 		printf("Error opening device %s: %d.\n", devname, errno);
 		return dev->fd;
@@ -114,7 +114,7 @@ static int test_video_open(struct device *dev, const char *devname, int no_query
 	if (!no_query) {
 		memset(&cap, 0, sizeof cap);
 		printf("test_video_open:VIDIOC_QERYCAP\n");
-		ret = ioctl(dev->fd, VIDIOC_QUERYCAP, &cap);
+		ret = ioctl(dev->fd, VIDIOC_QUERYCAP, &cap);      //ioctl arguments file descriptor ,VIDIOC_QUERYCAP annd cap
 		if (ret < 0) {
 			printf("Error opening device %s: unable to query "
 				"device.\n", devname);
@@ -146,7 +146,7 @@ static int test_video_open(struct device *dev, const char *devname, int no_query
 /* setting the video format taking arguments as height as 480 and width as 640 and format as YUYV */
 static int video_set_format(struct device *dev, unsigned int w, unsigned int h, unsigned int format)
 {
-	struct v4l2_format fmt;
+	struct v4l2_format fmt;    //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L2279
 	int ret;
 	
 	memset(&fmt, 0, sizeof fmt);
@@ -170,7 +170,7 @@ static int video_set_format(struct device *dev, unsigned int w, unsigned int h, 
 /*setting the frame rate to 1/30 */
 static int video_set_framerate(struct device *dev, struct v4l2_fract *time_per_frame)
 {
-	struct v4l2_streamparm parm;
+	struct v4l2_streamparm parm;  //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L2295
 	int ret;
 
 	memset(&parm, 0, sizeof parm);
@@ -224,8 +224,8 @@ unsigned int i;
 /* allocating the buffers using malloc and mapping the buffers by using mmap */
 static int video_alloc_buffers(struct device *dev, int nbufs, unsigned int offset)
 {
-	struct v4l2_requestbuffers rb;
-	struct v4l2_buffer buf;
+	struct v4l2_requestbuffers rb;  //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L942
+	struct v4l2_buffer buf;       //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L1021
 	int page_size;
 	struct buffer *buffers;
 	unsigned int i;
