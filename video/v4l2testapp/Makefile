@@ -1,7 +1,7 @@
 CROSS_COMPILE ?=
 
 CC	:= $(CROSS_COMPILE)gcc
-CFLAGS ?= -Iinclude -I/opt/vc/include -pipe -W -Wall -Wextra -g -O2
+CFLAGS ?= -Iinclude/linux
 LDFLAGS	?=
 LIBS	:= -L/opt/vc/lib -lrt -lbcm_host -lvcos -lvchiq_arm -pthread -lmmal_core -lmmal_util -lmmal_vc_client -lvcsm
 
@@ -14,5 +14,5 @@ all: $(PROGS)
 
 clean:
 	-rm -f *.o
-	-rm -f yavta
+	-rm -f $(PROGS)
 
