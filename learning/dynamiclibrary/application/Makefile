@@ -4,11 +4,12 @@ LDFLAGS = -shared   # linking flags
 RM = rm -f   # rm command
 TARGET_LIB = libtarget.so  # target lib
 
-SRCS = dytestapp.c add.c sub.c mul.c div.c  # source files
+SRCS = add.c sub.c mul.c div.c  # source files
 OBJS = $(SRCS:.c=.o)
 
-.PHONY: all
-all: ${TARGET_LIB}
+dytest:dytestapp.c libtarget.so
+	$(CC) -o dytest  dytestapp.c -I. libtarget.so
+
 
 $(TARGET_LIB): $(OBJS)
 	$(CC) ${LDFLAGS} -o $@ $^
@@ -16,8 +17,7 @@ $(TARGET_LIB): $(OBJS)
 $(SRCS:.c):%.c
 	$(CC) $(CFLAGS) -MM $< >$@
 
-include $(SRCS:.c)
-
 .PHONY: clean
 clean:
-	-${RM} ${TARGET_LIB} ${OBJS} $(SRCS:.c=.d)
+	-${RM} ${TARGET_LIB} ${OBJS}  dytest
+
