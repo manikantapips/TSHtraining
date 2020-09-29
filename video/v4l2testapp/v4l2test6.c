@@ -60,14 +60,14 @@
 #define V4L_BUFFERS_DEFAULT	10
 #define V4L_BUFFERS_MAX	32
 
-struct buffer
+struct buffer                     //struct buffer decalred and its members are size and mem which is void pointer
 {
 	unsigned int size;
 	void *mem;
 };
 
 
-struct device
+struct device             //struct device declared we are passing one paramter as this strcut for every test  case
 {
 	int fd;
 	enum v4l2_buf_type type;
@@ -167,14 +167,14 @@ static int video_set_format(struct device *dev, unsigned int w, unsigned int h, 
 		fmt.fmt.pix.width, fmt.fmt.pix.height, fmt.fmt.pix.sizeimage);
 	return 0;
 }
-/*setting the frame rate to 1/30 */
-static int video_set_framerate(struct device *dev, struct v4l2_fract *time_per_frame)
+/*setting the frame rate here we are passing  dev strcut and v4l2_fract struct membeers are numarator and denominator */
+static int video_set_framerate(struct device *dev, struct v4l2_fract *time_per_frame)   //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L420
 {
 	struct v4l2_streamparm parm;  //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L2295
 	int ret;
 
-	memset(&parm, 0, sizeof parm);
-	parm.type = dev->type;
+	memset(&parm, 0, sizeof parm);  //set the parm variable memory blocks with zero
+	parm.type = dev->type;         s
 
 	printf("Setting frame rate to: %u/%u\n",
 		time_per_frame->numerator,
@@ -227,7 +227,7 @@ static int video_alloc_buffers(struct device *dev, int nbufs, unsigned int offse
 	struct v4l2_requestbuffers rb;  //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L942
 	struct v4l2_buffer buf;       //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L1021
 	int page_size;
-	struct buffer *buffers;
+	struct buffer *buffers;       //members are size and void *
 	unsigned int i;
 	int ret;
 
@@ -295,7 +295,7 @@ static int video_alloc_buffers(struct device *dev, int nbufs, unsigned int offse
 	dev->nbufs = rb.count;
 	return 0;
 }
-
+//dev type is V4L2_BUF_TYPE_VIDEO_OUTPUT it wil call the below function
 static int video_load_test_pattern(struct device *dev, const char *filename)
 {
 printf("video_load_test_pattern\n");	
@@ -349,7 +349,7 @@ unsigned int size = dev->buffers[0].size;
 /* buffers are placing into input queue */
 static int video_queue_buffer(struct device *dev, int index)
 {
-	struct v4l2_buffer buf;
+	struct v4l2_buffer buf;  //https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/videodev2.h#L1021
 	int ret;
 
 	memset(&buf, 0, sizeof buf);
