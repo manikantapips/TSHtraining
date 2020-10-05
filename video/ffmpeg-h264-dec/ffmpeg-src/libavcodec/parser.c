@@ -43,6 +43,7 @@ AVCodecParser *av_parser_next(const AVCodecParser *p)
 
 void av_register_codec_parser(AVCodecParser *parser)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/parser.c av_register_codec_parser\n");
     do {
         parser->next = av_first_parser;
     } while (parser->next != avpriv_atomic_ptr_cas((void * volatile *)&av_first_parser, parser->next, parser));
@@ -50,6 +51,7 @@ void av_register_codec_parser(AVCodecParser *parser)
 
 AVCodecParserContext *av_parser_init(int codec_id)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_init \n");
     AVCodecParserContext *s = NULL;
     AVCodecParser *parser;
     int ret;

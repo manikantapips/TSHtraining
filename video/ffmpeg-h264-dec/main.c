@@ -12,7 +12,7 @@ extern AVCodecParser ff_h264_parser;
 
 static void yuv_save(unsigned char *buf[], int wrap[], int xsize,int ysize, FILE *f)
 {
-	printf("Manikanta:YUV save \n");
+	printf("Manikanta: yuv_save \n");
 	int i;	
 	for (i = 0; i < ysize; i++) {
 		fwrite(buf[0] + i * wrap[0], 1, xsize, f);
@@ -29,7 +29,7 @@ static void yuv_save(unsigned char *buf[], int wrap[], int xsize,int ysize, FILE
 static int decode_write_frame(FILE *file, AVCodecContext *avctx,
 							  AVFrame *frame, int *frame_index, AVPacket *pkt, int flush)
 {
-	printf("Manikanta:decode write frame \n");
+	printf("Manikanta: decode_write_frame \n");
 	int got_frame = 0;
 	do {
 		int len = avcodec_decode_video2(avctx, frame, &got_frame, pkt);
@@ -50,47 +50,50 @@ static int decode_write_frame(FILE *file, AVCodecContext *avctx,
 
 static void h264_video_decode(const char *filename, const char *outfilename)
 {
-	printf("Manikanta: h264 video decode\n");
+	printf("Manikanta: h264_video_decode \n");
 	printf("Decode file '%s' to '%s'\n", filename, outfilename);
 
 	FILE *file = fopen(filename, "rb");
+	printf("Manikanta: open %s file \n",filename);
 	if (!file) {
 		fprintf(stderr, "Could not open '%s'\n", filename);
 		exit(1);
 	}
 	
 	FILE *outfile = fopen(outfilename, "wb");
+	printf("Manikanta: open %s file \n",outfilename);
 	if (!outfile) {
 		fprintf(stderr, "Could not open '%s'\n", outfilename);
 		exit(1);
 	}
-	
+	printf("Manikanta: main:avcodec_register\n");
 	avcodec_register(&ff_h264_decoder);
+	printf("Manikanta: main:av_register_codec_parser\n");
 	av_register_codec_parser(&ff_h264_parser);
-	
+	printf("Manikanta: main:avcodec_find_decoder\n");
 	AVCodec *codec = avcodec_find_decoder(AV_CODEC_ID_H264);
 	if (!codec) {
 		fprintf(stderr, "Codec not found\n");
 		exit(1);
 	}
-
+	printf("Manikanta: main:avcodec_alloc_context3\n");
 	AVCodecContext *codec_ctx = avcodec_alloc_context3(codec);
 	if (!codec_ctx) {
 		fprintf(stderr, "Could not allocate video codec context\n");
 		exit(1);
 	}
-	
+	printf("Manikanta: main:avcodec_open2\n");	
 	if (avcodec_open2(codec_ctx, codec, NULL) < 0) {
 		fprintf(stderr, "Could not open codec\n");
 		exit(1);
 	}
-	
+	printf("Manikanta: main:av_parser_init\n");		
 	AVCodecParserContext* parser = av_parser_init(AV_CODEC_ID_H264);
 	if(!parser) {
 		fprintf(stderr, "Could not create H264 parser\n");
 		exit(1);
 	}
-
+	printf("Manikanta: main:av_frame_alloc\n");		
 	AVFrame *frame = av_frame_alloc();
 	if (!frame) {
 		fprintf(stderr, "Could not allocate video frame\n");
@@ -137,6 +140,7 @@ static void h264_video_decode(const char *filename, const char *outfilename)
 			av_init_packet(&packet);
 			packet.data = data;
 			packet.size = size;
+				printf("Manikanta: main: while decode_write_frame\n");	
 			int ret = decode_write_frame(outfile, codec_ctx, frame, &frame_index, &packet, 0);
 			if (ret < 0) {
 				fprintf(stderr, "Decode or write frame error\n");
@@ -151,6 +155,7 @@ static void h264_video_decode(const char *filename, const char *outfilename)
 	// Flush the decoder
 	packet.data = NULL;
 	packet.size = 0;
+	printf("Manikanta: main: decode_write_frame\n");	
 	decode_write_frame(outfile, codec_ctx, frame, &frame_index, &packet, 1);
 
 	gettimeofday(&tv_end, NULL);
@@ -179,7 +184,7 @@ void broadwayOnPictureDecoded(u8 *buffer, u32 width, u32 height) {
 
 static void broadway_decode(const char *filename, const char *outfilename)
 {
-	printf("Manikanta: broadway decode\n");
+	printf("Manikanta: broadway_decode \n");
 	printf("Decode file '%s' to '%s'\n", filename, outfilename);
 
 	FILE *finput = fopen(filename, "rb");

@@ -177,6 +177,7 @@ int av_codec_is_decoder(const AVCodec *codec)
 
 av_cold void avcodec_register(AVCodec *codec)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/utils.c: avcodec_register \n");
     AVCodec **p;
     avcodec_init();
     p = last_avcodec;
@@ -1207,6 +1208,7 @@ int attribute_align_arg ff_codec_open2_recursive(AVCodecContext *avctx, const AV
 
 int attribute_align_arg avcodec_open2(AVCodecContext *avctx, const AVCodec *codec, AVDictionary **options)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_open2\n");
     int ret = 0;
     AVDictionary *tmp = NULL;
     const AVPixFmtDescriptor *pixdesc;
@@ -3054,6 +3056,7 @@ AVCodec *avcodec_find_encoder_by_name(const char *name)
 
 AVCodec *avcodec_find_decoder(enum AVCodecID id)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/utils.c: avcodec_find_decoder\n");
     return find_encdec(id, 0);
 }
 

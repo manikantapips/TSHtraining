@@ -140,6 +140,7 @@ static void wipe_side_data(AVFrame *frame)
 
 AVFrame *av_frame_alloc(void)
 {
+	printf("Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc \n");
     AVFrame *frame = av_mallocz(sizeof(*frame));
 
     if (!frame)
