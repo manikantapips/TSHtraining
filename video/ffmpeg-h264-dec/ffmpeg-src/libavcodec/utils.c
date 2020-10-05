@@ -2176,6 +2176,7 @@ int attribute_align_arg avcodec_decode_video2(AVCodecContext *avctx, AVFrame *pi
                                               int *got_picture_ptr,
                                               const AVPacket *avpkt)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 \n");
     AVCodecInternal *avci = avctx->internal;
     int ret;
     // copy to ensure we do not change avpkt
@@ -2952,7 +2953,8 @@ int attribute_align_arg avcodec_receive_packet(AVCodecContext *avctx, AVPacket *
 
 av_cold int avcodec_close(AVCodecContext *avctx)
 {
-    int i;
+    printf("Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_close \n");
+	int i;
 
     if (!avctx)
         return 0;

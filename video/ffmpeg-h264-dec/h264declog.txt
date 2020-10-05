@@ -1,0 +1,3463 @@
+Manikanta: h264_video_decode 
+Decode file 'test/352x288Foreman.264' to 'y.yuv'
+Manikanta: open test/352x288Foreman.264 file 
+Manikanta: open y.yuv file 
+Manikanta: main:avcodec_register
+Manikanta:ffmpeg-src/libavcodec/utils.c: avcodec_register 
+Manikanta: main:av_register_codec_parser
+Manikanta:ffmpeg-src/libavcodec/parser.c av_register_codec_parser
+Manikanta: main:avcodec_find_decoder
+Manikanta:ffmpeg-src/libavcodec/utils.c: avcodec_find_decoder
+Manikanta: main:avcodec_alloc_context3
+Manikanta:ffmpeg-src/libavcodec/options.c:avcodec_alloc_context3
+Manikanta: main:avcodec_open2
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_open2
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta: main:av_parser_init
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_init 
+Manikanta: main:av_frame_alloc
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_alloc 
+Manikanta: main:gettimeofday
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 0
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:1 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 1
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 2
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 3
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 4
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 5
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 6
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 7
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 8
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 9
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 10
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 11
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 12
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 13
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 14
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 15
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 16
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 17
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 18
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 19
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 20
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 21
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 22
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 23
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 24
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 25
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 26
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 27
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 28
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 29
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 30
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 31
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 32
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 33
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 34
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 35
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 36
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 37
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 38
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 39
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 40
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 41
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 42
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 43
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 44
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 45
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 46
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 47
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 48
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 49
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 50
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 51
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 52
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 53
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 54
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 55
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 56
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 57
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 58
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 59
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 60
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 61
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 62
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 63
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 64
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 65
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 66
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 67
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 68
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 69
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 70
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 71
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 72
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 73
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 74
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 75
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 76
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 77
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 78
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 79
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 80
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 81
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 82
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 83
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 84
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 85
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 86
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 87
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 88
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 89
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 90
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 91
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 92
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 93
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 94
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 95
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 96
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 97
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 98
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 99
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 100
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 101
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 102
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 103
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 104
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 105
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 106
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 107
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 108
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 109
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 110
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 111
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 112
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 113
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 114
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 115
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 116
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 117
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 118
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 119
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 120
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 121
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 122
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 123
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 124
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 125
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 126
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 127
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 128
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 129
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 130
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 131
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 132
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 133
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 134
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 135
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 136
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 137
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 138
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 139
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 140
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 141
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 142
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 143
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 144
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 145
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 146
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 147
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 148
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 149
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 150
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 151
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 152
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 153
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 154
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 155
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 156
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 157
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 158
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 159
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 160
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 161
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 162
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 163
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 164
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 165
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 166
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 167
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 168
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 169
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 170
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 171
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 172
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 173
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 174
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 175
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 176
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 177
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 178
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 179
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 180
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 181
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 182
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 183
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 184
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 185
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 186
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 187
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 188
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 189
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 190
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 191
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 192
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 193
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 194
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 195
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 196
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 197
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 198
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 199
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 200
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 201
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 202
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 203
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 204
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 205
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 206
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 207
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 208
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 209
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 210
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 211
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 212
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 213
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 214
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 215
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 216
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 217
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 218
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 219
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 220
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 221
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 222
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 223
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 224
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 225
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 226
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 227
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 228
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 229
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 230
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 231
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 232
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 233
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 234
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 235
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 236
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: av_parser_parse2 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 
+Manikanta: main: while decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 237
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta: main: decode_write_frame
+Manikanta: decode_write_frame 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 238
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Got frame 239
+Manikanta:main: yuv_save 
+width:352 
+height:288 
+format:0 
+keyframe:0 
+Manikanta: yuv_save 
+Manikanta:main: avcodec_decode_video2 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_decode_video2 
+Manikanta: main: gettimeofday 
+Manikanta: main: fclose  
+Manikanta: main: fclose °K¨TV 
+Manikanta: main: avcodec_close 
+Manikanta:ffmpeg-src/libavcodec/utils.c:avcodec_close 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta: main: av_free 
+Manikanta: main: av_parser_close 
+Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_close 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Manikanta: main: av_frame_free 
+Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free 
+Done
+Decoding time: 0.709s, speed: 339.9 FPS

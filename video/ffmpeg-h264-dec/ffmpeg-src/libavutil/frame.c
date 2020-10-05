@@ -154,6 +154,7 @@ AVFrame *av_frame_alloc(void)
 
 void av_frame_free(AVFrame **frame)
 {
+	printf("Manikanta:ffmpeg-src/libavutil/frame.c:av_frame_free \n");
     if (!frame || !*frame)
         return;
 

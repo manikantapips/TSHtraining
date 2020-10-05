@@ -32,6 +32,7 @@ static int decode_write_frame(FILE *file, AVCodecContext *avctx,
 	printf("Manikanta: decode_write_frame \n");
 	int got_frame = 0;
 	do {
+			printf("Manikanta:main: avcodec_decode_video2 \n");
 		int len = avcodec_decode_video2(avctx, frame, &got_frame, pkt);
 		if (len < 0) {
 			fprintf(stderr, "Error while decoding frame %d\n", *frame_index);
@@ -40,7 +41,10 @@ static int decode_write_frame(FILE *file, AVCodecContext *avctx,
 		if (got_frame) {
 			printf("Got frame %d\n", *frame_index);
 			if (file) {
+							printf("Manikanta:main: yuv_save \n");
+				printf("width:%d \nheight:%d \nformat:%d \nkeyframe:%d \n",frame->width,frame->height,frame->format,frame->key_frame);
 				yuv_save(frame->data, frame->linesize, frame->width, frame->height, file);
+
 			}
 			(*frame_index)++;
 		}
@@ -109,6 +113,7 @@ static void h264_video_decode(const char *filename, const char *outfilename)
 	AVPacket packet;
 	
 	struct timeval tv_start, tv_end;
+	printf("Manikanta: main:gettimeofday\n");			
 	gettimeofday(&tv_start, NULL);
 	while (!ending) {
 		if (need_more == 1 && buf_size + READ_SIZE <= BUFFER_CAPACITY) {
@@ -129,6 +134,7 @@ static void h264_video_decode(const char *filename, const char *outfilename)
 		
 		uint8_t* data = NULL;
   		int size = 0;
+  			printf("Manikanta: main: av_parser_parse2 \n");
 		int bytes_used = 
 		av_parser_parse2(parser, codec_ctx, &data, &size, buf, buf_size, 0, 0, AV_NOPTS_VALUE);
 		if (size == 0) {
@@ -157,15 +163,20 @@ static void h264_video_decode(const char *filename, const char *outfilename)
 	packet.size = 0;
 	printf("Manikanta: main: decode_write_frame\n");	
 	decode_write_frame(outfile, codec_ctx, frame, &frame_index, &packet, 1);
-
+	printf("Manikanta: main: gettimeofday \n");		
 	gettimeofday(&tv_end, NULL);
 
 	fclose(file);
+	printf("Manikanta: main: fclose %s \n",file);		
 	fclose(outfile);
-
+	printf("Manikanta: main: fclose %s \n",outfile);
+	printf("Manikanta: main: avcodec_close \n");				
 	avcodec_close(codec_ctx);
+	printf("Manikanta: main: av_free \n");				
 	av_free(codec_ctx);
+	printf("Manikanta: main: av_parser_close \n");					
 	av_parser_close(parser);
+	printf("Manikanta: main: av_frame_free \n");					
 	av_frame_free(&frame);
 	printf("Done\n");
 
@@ -188,28 +199,31 @@ static void broadway_decode(const char *filename, const char *outfilename)
 	printf("Decode file '%s' to '%s'\n", filename, outfilename);
 
 	FILE *finput = fopen(filename, "rb");
+	printf("Manikanta: broadway_decode: fopen of %s \n",finput);
 	if (!finput) {
 		fprintf(stderr, "Could not open '%s'\n", filename);
 		exit(1);
 	}
 	
 	foutput = fopen(outfilename, "wb");
+	printf("Manikanta: broadway_decode: fopen of %s \n",foutput);
 	if (!foutput) {
 		fprintf(stderr, "Could not open '%s'\n", outfilename);
 		exit(1);
 	}
-	
+	//printf("Manikanta: broadway_decode: fseek sets the file positon finput to given offset\n);	
 	fseek(finput, 0L, SEEK_END);
 	u32 length = (u32)ftell(finput);
 	rewind(finput);
-	
+	printf("Manikanta: broadway_decode:broadwayInit  \n");	
 	broadwayInit();
+	printf("Manikanta: broadway_decode:broadwayCreateStream  \n");		
 	u8* buffer = broadwayCreateStream(length);
 	fread(buffer, sizeof(u8), length, finput);
 	fclose(finput);
-	
+	printf("Manikanta: broadway_decode:broadwayParsePlayStream  \n");				
 	broadwayParsePlayStream(length);
-	
+	printf("Manikanta: broadway_decode:broadwayExit  \n");				
 	broadwayExit();
 	
 	fclose(foutput);

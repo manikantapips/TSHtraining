@@ -140,6 +140,7 @@ int av_parser_parse2(AVCodecParserContext *s, AVCodecContext *avctx,
                      const uint8_t *buf, int buf_size,
                      int64_t pts, int64_t dts, int64_t pos)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_parse2 \n");
     int index, i;
     uint8_t dummy_buf[AV_INPUT_BUFFER_PADDING_SIZE];
 
@@ -236,6 +237,7 @@ int av_parser_change(AVCodecParserContext *s, AVCodecContext *avctx,
 
 void av_parser_close(AVCodecParserContext *s)
 {
+	printf("Manikanta:ffmpeg-src/libavcodec/parser.c:av_parser_close \n");
     if (s) {
         if (s->parser->parser_close)
             s->parser->parser_close(s);
