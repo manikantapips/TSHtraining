@@ -5,6 +5,7 @@ Device /dev/video0 opened: 1.3M HD WebCam: 1.3M HD WebCam (usb-0000:00:1d.7-4).
 video_set_format:
 video_set_format:VIDIOC_S_FMT
 Video format set: width: 640 height: 480 buffer size: 614400
+Video format: YUYV (56595559) 640x480
 video_set_framerate
 Setting frame rate to: 1/30
 video_set_framerate:VIDIOC_S_PARAM

@@ -165,6 +165,13 @@ static int video_set_format(struct device *dev, unsigned int w, unsigned int h, 
 
 	printf("Video format set: width: %u height: %u buffer size: %u\n",
 		fmt.fmt.pix.width, fmt.fmt.pix.height, fmt.fmt.pix.sizeimage);
+		printf("Video format: %c%c%c%c (%08x) %ux%u\n",
+		(fmt.fmt.pix.pixelformat >> 0) & 0xff,
+		(fmt.fmt.pix.pixelformat >> 8) & 0xff,
+		(fmt.fmt.pix.pixelformat >> 16) & 0xff,
+		(fmt.fmt.pix.pixelformat >> 24) & 0xff,
+		fmt.fmt.pix.pixelformat,
+		fmt.fmt.pix.width, fmt.fmt.pix.height);
 	return 0;
 }
 /*setting the frame rate here we are passing  dev strcut and v4l2_fract struct membeers are numarator and denominator */
@@ -174,7 +181,7 @@ static int video_set_framerate(struct device *dev, struct v4l2_fract *time_per_f
 	int ret;
 
 	memset(&parm, 0, sizeof parm);  //set the parm variable memory blocks with zero
-	parm.type = dev->type;         s
+	parm.type = dev->type;     
 
 	printf("Setting frame rate to: %u/%u\n",
 		time_per_frame->numerator,
