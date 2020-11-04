@@ -1,0 +1,154 @@
+pips@pips-Aspire-5336:~/Desktop/videoT/tutorials$ ./playback-tutorial-1
+Manikanta: gst_init 
+Manikanta: gst_element_factory_make 
+Manikanta: g_object_set :Set the URI to play 
+Manikanta: g_object_get :  
+Manikanta: g_object_set : Set flags to show Audio and Video but ignore Subtitles 
+Manikanta: g_object_set : Set connection speed. This will affect some internal decisions of playbin 
+Manikanta: gst_element_get_bus :  
+Manikanta: gst_bus_add_watch  : Add a bus watch, so we get notified when a message arrives 
+Manikanta: g_io_channel_unix_new  : Add a keyboard watch so we get notified of keystrokes 
+Manikanta: g_io_add_watch  : Add a keyboard watch so we get notified of keystrokes 
+Manikanta: gst_element_set_state  : data.playbin, GST_STATE_PLAYING 
+Manikanta: g_main_loop_new  : Create a GLib Main Loop 
+Manikanta: g_main_loop_run  : GLib Main Loop  set it to run 
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: handle_message : gst_message_parse_state_changed  
+Manikanta: analyze_streams :  Once we are in the playing state, analyze the streams 
+Manikanta: analyze_streams  : Extract some metadata from the streams and print it on the screen 
+1 video stream(s), 3 audio stream(s), 0 text stream(s)
+
+Manikanta: g_signal_emit_by_name  : Retrieve the stream's video tags 
+video stream 0:
+Manikanta: g_signal_emit_by_name  
+  codec: On2 VP8
+Manikanta: g_free  
+Manikanta: gst_tag_list_unref  
+
+Manikanta: g_signal_emit_by_name : Retrieve the stream's audio tags  
+audio stream 0:
+  codec: Vorbis
+  language: pt
+  bitrate: 160000
+Manikanta: g_signal_emit_by_name : Retrieve the stream's audio tags  
+audio stream 1:
+  codec: Vorbis
+  language: en
+  bitrate: 160000
+Manikanta: g_signal_emit_by_name : Retrieve the stream's audio tags  
+audio stream 2:
+  codec: Vorbis
+  language: es
+  bitrate: 160000
+
+
+Currently playing video stream 0, audio stream 0 and text stream -1
+Type any number and hit ENTER to select a different audio stream
+2
+Manikanta: handle_keyboard :  Process keyboard input 
+Setting current audio stream to 2
+End-Of-Stream reached.
+Manikanta: g_main_loop_quit  
+Manikanta: g_main_loop_unref  : free resources 
+Manikanta: g_io_channel_unref  : free resources 
+Manikanta: gst_object_unref  : free resources 
+Manikanta: gst_element_set_state  : free resources 
+Manikanta: gst_object_unref  : free resources 
+
