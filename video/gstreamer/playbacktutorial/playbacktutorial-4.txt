@@ -1,0 +1,732 @@
+Manikanta: main  : gst_init : Initialize GStreamer 
+Manikanta: main  : memset : Initialize our data structurer 
+Manikanta: main  : gst_parse_launch : Build the pipeline 
+Manikanta: main  : gst_element_get_bus :  
+Manikanta: main  : g_object_get : get the flags 
+Manikanta: main  : g_object_set : Set the download flag 
+Manikanta: main  : gst_element_set_state : Start playing 
+Manikanta: main  : g_main_loop_new :  
+Manikanta: main  : gst_bus_add_signal_watch :  
+Manikanta: main  : g_signal_connect : G_CALLBACK (cb_message) 
+Manikanta: main  : g_signal_connect : G_CALLBACK (got_location) 
+Manikanta: main  : g_timeout_add_seconds : Register a function that GLib will call every second 
+Manikanta: main  : g_main_loop_run :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: got_location : g_object_get :  
+Temporary file: /home/pips/.cache/playback-tutorial-4-N0KNT0
+Manikanta: got_location : g_free :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing playing
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing playing
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_message_parse_buffering : 
+Manikanta: cb_message  :GST_MESSAGE_BUFFERING : gst_element_set_state : Wait until buffering is complete before start/resume playing PAUSAED
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: cb_message  :  
+Manikanta: refresh_ui  : gst_query_new_buffering : 
+Manikanta: refresh_ui  : gst_element_query : 
+Manikanta: refresh_ui  : gst_query_get_n_buffering_ranges : 
+Manikanta: refresh_ui  : gst_query_parse_nth_buffering_range : 
+[X-----------------------------------------------------------------------------] Buffering:  72%Manikanta: cb_message  :  
+Manikanta: cb_message  : gst_message_parse_error : 
+Error: Output window was closed
+Manikanta: cb_message  : g_error_free : 
+Manikanta: cb_message  : g_free : 
+Manikanta: cb_message  : gst_element_set_state : 
+Manikanta: cb_message  : g_main_loop_quit : 
+Manikanta: main  : g_main_loop_unref : free resources mainloop 
+Manikanta: main  : gst_object_unref : free resources bus 
+Manikanta: main  : gst_element_set_state : free resources  
+Manikanta: main  : gst_object_unref : free resources pipeline  
+

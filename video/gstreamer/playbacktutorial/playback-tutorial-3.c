@@ -1,6 +1,7 @@
 #include <gst/gst.h>
 #include <gst/audio/audio.h>
 #include <string.h>
+#include<stdio.h>
 
 #define CHUNK_SIZE 1024         /* Amount of bytes we are sending in each buffer */
 #define SAMPLE_RATE 44100       /* Samples per second we are sending */
@@ -26,6 +27,7 @@ typedef struct _CustomData
 static gboolean
 push_data (CustomData * data)
 {
+  printf("Manikanta: push_data : This method is called by the idle GSource in the mainloop to feed CHUNK_SIZE bytes into appsrc \n");
   GstBuffer *buffer;
   GstFlowReturn ret;
   int i;
@@ -35,15 +37,19 @@ push_data (CustomData * data)
   gfloat freq;
 
   /* Create a new empty buffer */
+  printf("Manikanta: push_data : gst_buffer_new_and_alloc : Create a new empty buffer \n");
   buffer = gst_buffer_new_and_alloc (CHUNK_SIZE);
 
   /* Set its timestamp and duration */
+  printf("Manikanta: push_data : gst_util_uint64_scale : Set  timestamp \n");
   GST_BUFFER_TIMESTAMP (buffer) =
       gst_util_uint64_scale (data->num_samples, GST_SECOND, SAMPLE_RATE);
+  printf("Manikanta: push_data : gst_util_uint64_scale : Set  duration \n");      
   GST_BUFFER_DURATION (buffer) =
       gst_util_uint64_scale (num_samples, GST_SECOND, SAMPLE_RATE);
 
   /* Generate some psychodelic waveforms */
+  printf("Manikanta: push_data : gst_buffer_map : Generate some psychodelic waveforms \n");      
   gst_buffer_map (buffer, &map, GST_MAP_WRITE);
   raw = (gint16 *) map.data;
   data->c += data->d;
@@ -54,13 +60,16 @@ push_data (CustomData * data)
     data->b -= data->a / freq;
     raw[i] = (gint16) (500 * data->a);
   }
+  printf("Manikanta: push_data : gst_buffer_unmap :  \n");      
   gst_buffer_unmap (buffer, &map);
   data->num_samples += num_samples;
 
   /* Push the buffer into the appsrc */
+  printf("Manikanta: push_data : g_signal_emit_by_name : Push the buffer into the appsrc \n");      
   g_signal_emit_by_name (data->app_source, "push-buffer", buffer, &ret);
 
   /* Free the buffer now that we are done with it */
+  printf("Manikanta: push_data : gst_buffer_unref : Free the buffer now that we are done with it \n");      
   gst_buffer_unref (buffer);
 
   if (ret != GST_FLOW_OK) {
@@ -76,6 +85,7 @@ push_data (CustomData * data)
 static void
 start_feed (GstElement * source, guint size, CustomData * data)
 {
+  printf("Manikanta: start_feed  : callback triggers when appsrc needs data \n");      
   if (data->sourceid == 0) {
     g_print ("Start feeding\n");
     data->sourceid = g_idle_add ((GSourceFunc) push_data, data);
@@ -87,6 +97,7 @@ start_feed (GstElement * source, guint size, CustomData * data)
 static void
 stop_feed (GstElement * source, CustomData * data)
 {
+  printf("Manikanta: stop_feed  : ccallback triggers when appsrc has enough data a \n");      
   if (data->sourceid != 0) {
     g_print ("Stop feeding\n");
     g_source_remove (data->sourceid);
@@ -98,6 +109,7 @@ stop_feed (GstElement * source, CustomData * data)
 static void
 error_cb (GstBus * bus, GstMessage * msg, CustomData * data)
 {
+  printf("Manikanta: error_cb  : This function is called when an error message is posted on the bus \n");      
   GError *err;
   gchar *debug_info;
 
@@ -117,6 +129,7 @@ error_cb (GstBus * bus, GstMessage * msg, CustomData * data)
 static void
 source_setup (GstElement * pipeline, GstElement * source, CustomData * data)
 {
+  printf("Manikanta: source_setup  : This function is called when playbin has created the appsrc element, so we have a chance to configure it \n");      
   GstAudioInfo info;
   GstCaps *audio_caps;
 
@@ -139,34 +152,46 @@ main (int argc, char *argv[])
   GstBus *bus;
 
   /* Initialize cumstom data structure */
+  printf("Manikanta: main : memset : Initialize cumstom data structure \n");
   memset (&data, 0, sizeof (data));
   data.b = 1;                   /* For waveform generation */
   data.d = 1;
 
   /* Initialize GStreamer */
+  printf("Manikanta: main : gst_init : Initialize GStreamer \n");
   gst_init (&argc, &argv);
 
   /* Create the playbin element */
+  printf("Manikanta: main : gst_parse_launch : Create the playbin element \n");
   data.pipeline = gst_parse_launch ("playbin uri=appsrc://", NULL);
+  printf("Manikanta: main : g_signal_connect : for excuting call back for particular signal \n");  
   g_signal_connect (data.pipeline, "source-setup", G_CALLBACK (source_setup),
       &data);
 
   /* Instruct the bus to emit signals for each received message, and connect to the interesting signals */
+  printf("Manikanta: main : gst_element_get_bus : GstPipeline will provide a bus for the application \n");  
   bus = gst_element_get_bus (data.pipeline);
+  printf("Manikanta: main : gst_bus_add_signal_watch : the bus will emit the message signal for each message posted on the bus\n");    
   gst_bus_add_signal_watch (bus);
   g_signal_connect (G_OBJECT (bus), "message::error", (GCallback) error_cb,
       &data);
+  printf("Manikanta: main : gst_object_unref :  \n");    
   gst_object_unref (bus);
 
   /* Start playing the pipeline */
+  printf("Manikanta: main : gst_element_set_state : Sets the state of the element \n");    
   gst_element_set_state (data.pipeline, GST_STATE_PLAYING);
 
   /* Create a GLib Main Loop and set it to run */
+  printf("Manikanta: main : g_main_loop_new : Create a GLib Main Loop \n");      
   data.main_loop = g_main_loop_new (NULL, FALSE);
+  printf("Manikanta: main : g_main_loop_run : set it to run \n");        
   g_main_loop_run (data.main_loop);
 
   /* Free resources */
+  printf("Manikanta: main : gst_element_set_state : Free resources \n");          
   gst_element_set_state (data.pipeline, GST_STATE_NULL);
+  printf("Manikanta: main : gst_object_unref : Free resources \n");            
   gst_object_unref (data.pipeline);
   return 0;
 }

@@ -6,11 +6,12 @@ Command to Run playback tutorial-2
 	gcc playback-tutorial-2.c -o playback-tutorial-2 `pkg-config --cflags --libs gstreamer-1.0`
 	
 	
+Command to Run playback tutorial-3
+	gcc playback-tutorial-3.c -o playback-tutorial-3 `pkg-config --cflags --libs gstreamer-1.0 gstreamer-audio-1.0`	
 	
 	
-	
-	
-	
+Command to Run playback tutorial-4	
+	gcc playback-tutorial-4.c -o playback-tutorial-4 `pkg-config --cflags --libs gstreamer-1.0`
 	
 	
 	
@@ -246,5 +247,335 @@ Returns
 	TRUE, if a value was copied, FALSE if the tag didn't exist in the given list.
 
 ----------------------------------------------------------------------------------------------------------------------------
+
+This passing of control is done using the idea of "signals". (Note that these signals are not the same as the Unix system signals, and are not implemented using them, although the terminology is almost identical.) When an event occurs, such as the press of a mouse button, the appropriate signal will be "emitted" by the widget that was pressed. This is how GTK does most of its useful work. There are signals that all widgets inherit, such as "destroy", and there are signals that are widget specific, such as "toggled" on a toggle button.
+
+To make a button perform an action, we set up a signal handler to catch these signals and call the appropriate function. This is done by using a function such as:
+
+gulong g_signal_connect( gpointer      *object,
+                         const gchar   *name,
+                         GCallback     func,
+                         gpointer      func_data );
+
+where the first argument is the widget which will be emitting the signal, and the second the name of the signal you wish to catch. The third is the function you wish to be called when it is caught, and the fourth, the data you wish to have passed to this function.
+
+The function specified in the third argument is called a "callback function", and should generally be of the form
+
+
+__________________________________________________________________________________________________________________________________
+gst_bus_add_signal_watch ()
+
+void
+gst_bus_add_signal_watch (GstBus *bus);
+
+Adds a bus signal watch to the default main context with the default priority (G_PRIORITY_DEFAULT). It is also possible to use a non-default main context set up using g_main_context_push_thread_default() (before one had to create a bus watch source and attach it to the desired main context 'manually').
+
+After calling this statement, the bus will emit the "message" signal for each message posted on the bus.
+
+This function may be called multiple times. To clean up, the caller is responsible for calling gst_bus_remove_signal_watch() as many times as this function is called.
+
+MT safe.
+Parameters
+
+bus
+	
+
+a GstBus on which you want to receive the "message" signal
+
+--------------------------------------------------------------------------------------------------------------
+gst_element_set_state ()
+
+GstStateChangeReturn
+gst_element_set_state (GstElement *element,
+                       GstState state);
+
+Sets the state of the element. This function will try to set the requested state by going through all the intermediary states and calling the class's state change function for each.
+
+This function can return GST_STATE_CHANGE_ASYNC, in which case the element will perform the remainder of the state change asynchronously in another thread. An application can use gst_element_get_state() to wait for the completion of the state change or it can wait for a GST_MESSAGE_ASYNC_DONE or GST_MESSAGE_STATE_CHANGED on the bus.
+
+State changes to GST_STATE_READY or GST_STATE_NULL never return GST_STATE_CHANGE_ASYNC.
+Parameters
+
+element
+	
+
+a GstElement to change state of.
+	 
+
+state
+	
+
+the element's new GstState.
+	 
+Returns
+
+Result of the state change using GstStateChangeReturn.
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+void gst_audio_info_set_format (GstAudioInfo *info,GstAudioFormat format,gint rate,gint channels,const GstAudioChannelPosition *position);
+
+Set the default info for the audio info of format and rate and channels .
+
+Note: This initializes info first, no values are preserved.
+
+Parameters:
+info
+	a GstAudioInfo
+	 
+format
+	the format
+	 
+rate
+	the samplerate
+	 
+channels
+	the number of channels
+	 
+position
+	the channel positions
+
+The first property that needs to be set on the appsrc is caps. It specifies the kind of data that the element is going to produce, so GStreamer can check if linking with downstream elements is possible (this is, if the downstream elements will understand this kind of data). This property must be a GstCaps object, which is easily built from a string with gst_caps_from_string().
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+GstCaps *   gst_audio_info_to_caps(GstAudioInfo *info);
+
+Convert the values of info into a GstCaps.
+
+info :
+	a GstAudioInfo
+
+Returns :
+	the new GstCaps containing the info of info. [transfer full]
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+This function is called when the internal queue of appsrc is about to starve (run out of data). The only thing we do here is register a GLib idle function with g_idle_add() that feeds data to appsrc until it is full again. 
+
+
+guint g_idle_add (GSourceFunc function,gpointer data);
+
+Adds a function to be called whenever there are no higher priority events pending to the default main loop. The function is given the default idle priority, G_PRIORITY_DEFAULT_IDLE. If the function returns FALSE it is automatically removed from the list of event sources and will not be called again.
+
+Parameters:
+function
+	function to call
+	 
+data
+	data to pass to function .
+	 
+Returns
+	the ID (greater than 0) of the event source.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+This function is called when the internal queue of appsrc is full enough so we stop pushing data. Here we simply remove the idle function by using g_source_remove() (The idle function is implemented as a GSource).
+
+
+gboolean g_source_remove (guint tag);
+
+Removes the source with the given ID from the default main context. You must use g_source_destroy() for sources added to a non-default main context.
+
+parameters:
+tag
+	the ID of the source to remove.
+	 
+Returns
+	For historical reasons, this function always returns TRUE
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+GstBuffer *  gst_buffer_new_and_alloc(guint size);
+
+Creates a newly allocated buffer with data of the given size. The buffer memory is not cleared. If the requested amount of memory can't be allocated, the program will abort. Use gst_buffer_try_new_and_alloc() if you want to handle this case gracefully or have gotten the size to allocate from an untrusted source such as a media stream.
+
+Note that when size == 0, the buffer data pointer will be NULL.
+
+parameter:
+size :
+	the size in bytes of the new buffer's data.
+
+Returns :
+	the new GstBuffer. [transfer full]
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+guint64 gst_util_uint64_scale (guint64 val,guint64 num,guint64 denom);
+
+
+Scale val by the rational number num / denom , avoiding overflows and underflows and without loss of precision.
+This function can potentially be very slow if val and num are both greater than G_MAXUINT32.
+
+Parameters:
+val
+	the number to scale
+	 
+num
+	the numerator of the scale ratio
+	 
+denom
+	the denominator of the scale ratio
+	 
+Returns
+	val * num / denom . In the case of an overflow, this function returns G_MAXUINT64. If the result is not exactly representable as an 		integer it is truncated. 
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+GstBus
+
+The GstBus is an object responsible for delivering GstMessage packets in a first-in first-out way from the streaming threads (see GstTask) to the application.
+
+Since the application typically only wants to deal with delivery of these messages from one thread, the GstBus will marshall the messages between different threads. This is important since the actual streaming of media is done in another thread than the application.
+
+The GstBus provides support for GSource based notifications. This makes it possible to handle the delivery in the glib mainloop.
+
+The GSource callback function gst_bus_async_signal_func can be used to convert all bus messages into signal emissions.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+GstQuery * gst_query_new_buffering (GstFormat format);
+
+
+Constructs a new query object for querying the buffering status of a stream.
+Free-function: gst_query_unref
+
+Parameters:
+format
+	the default GstFormat for the new query
+	 
+Returns
+	a new GstQuery. 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+gboolean  gst_element_query (GstElement * element,GstQuery * query)
+
+
+Performs a query on the given element.
+
+For elements that don't implement a query handler, this function forwards the query to a random srcpad or to the peer of a random linked sinkpad of this element.
+
+Parameters:
+element –
+	a GstElement to perform the query on.query ( [transfer: none] ) –the GstQuery.
+Returns –
+	TRUE if the query could be performed.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+guint  gst_query_get_n_buffering_ranges (GstQuery *query);
+
+
+Retrieve the number of values currently stored in the buffered-ranges array of the query's structure.
+
+Parameters:
+query
+	a GST_QUERY_BUFFERING type query GstQuery
+	 
+Returns
+	the range array size as a guint.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+gboolean  gst_query_parse_nth_buffering_range (GstQuery *query,guint index,gint64 *start,gint64 *stop);
+
+
+Parse an available query and get the start and stop values stored at the index of the buffered ranges array.
+
+Parameters:
+query
+	a GST_QUERY_BUFFERING type query GstQuery
+	 
+index
+	position in the buffered-ranges array to read	 
+
+start
+	the start position to set, or NULL.
+	[out][allow-none]
+stop
+	the stop position to set, or NULL.
+	[out][allow-none]
+Returns
+	a gboolean indicating if the parsing succeeded.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+gboolean  gst_element_query_duration (GstElement * element,GstFormat format,gint64 * duration)
+
+
+Queries an element (usually top-level pipeline or playbin element) for the total stream duration in nanoseconds. This query will only work once the pipeline is prerolled (i.e. reached PAUSED or PLAYING state). The application will receive an ASYNC_DONE message on the pipeline bus when that is the case.
+
+If the duration changes for some reason, you will get a DURATION_CHANGED message on the pipeline bus, in which case you should re-query the duration using this function.
+
+
+Parameters:
+element –
+	a GstElement to invoke the duration query on.
+format –
+	the GstFormat requested
+duration ( [out] [allow-none] ) –
+	A location in which to store the total duration, or NULL.
+Returns –
+	TRUE if the query could be performed.
+--------------------------------------------------------------------------------------------------------------------------
+
+
+gboolean   gst_element_query_position (GstElement * element,GstFormat format,gint64 * cur)
+
+
+Queries an element (usually top-level pipeline or playbin element) for the stream position in nanoseconds. This will be a value between 0 and the stream duration (if the stream duration is known). This query will usually only work once the pipeline is prerolled (i.e. reached PAUSED or PLAYING state). The application will receive an ASYNC_DONE message on the pipeline bus when that is the case.
+
+If one repeatedly calls this function one can also create a query and reuse it in gst_element_query.
+
+Parameters:
+element –
+	a GstElement to invoke the position query on.
+format –	the GstFormat requested
+cur ( [out] [allow-none] ) –
+	a location in which to store the current position, or NULL.
+Returns –
+	TRUE if the query could be performed.
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
