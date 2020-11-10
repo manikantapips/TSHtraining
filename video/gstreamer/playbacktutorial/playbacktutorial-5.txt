@@ -1,0 +1,151 @@
+Manikanta : main : gst_init : Initialize GStreamer 
+Manikanta : main : memset : Initialize our data structure 
+USAGE: Choose one of the following options, then press enter:
+ 'C' to increase contrast, 'c' to decrease contrast
+ 'B' to increase brightness, 'b' to decrease brightness
+ 'H' to increase hue, 'h' to decrease hue
+ 'S' to increase saturation, 's' to decrease saturation
+ 'Q' to quit
+Manikanta : main : gst_parse_launch : Build the pipeline 
+Manikanta : main : g_io_channel_unix_new : Add a keyboard watch so we get notified of keystrokes  
+Manikanta : main : g_io_add_watch : Add a keyboard watch so we get notified of keystrokes  
+Manikanta : main : gst_element_set_state : Start playing 
+Manikanta : main : print_current_values :  
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  50% BRIGHTNESS:  50% HUE:  50% SATURATION:  50% 
+Manikanta : main : g_main_loop_new : Create a GLib Main Loop 
+Manikanta : main : g_main_loop_run : Create a GLib Main Loop set it to run 
+C
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  50% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  60% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  70% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  80% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  90% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS: 100% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS: 100% HUE:  50% SATURATION:  50% 
+B
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS: 100% HUE:  50% SATURATION:  50% 
+b
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  90% HUE:  50% SATURATION:  50% 
+b
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  80% HUE:  50% SATURATION:  50% 
+b
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  70% HUE:  50% SATURATION:  50% 
+b
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  60% HUE:  50% SATURATION:  50% 
+b
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  50% HUE:  50% SATURATION:  50% 
+b
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  40% HUE:  50% SATURATION:  50% 
+S
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  40% HUE:  50% SATURATION:  60% 
+S
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  40% HUE:  50% SATURATION:  70% 
+S
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  40% HUE:  50% SATURATION:  80% 
+S
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  40% HUE:  50% SATURATION:  90% 
+Sc
+Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input 
+Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels 
+Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value 
+Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value 
+Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values 
+CONTRAST:  60% BRIGHTNESS:  40% HUE:  50% SATURATION: 100% 
+

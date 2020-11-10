@@ -1,0 +1,22 @@
+./playback-tutorial-7 
+Manikanta: main : gst_init : Initialize GStreamer 
+Manikanta: main : gst_parse_launch : Build the pipeline 
+Manikanta: main : gst_element_factory_make : Create the elements inside the sink bin :equalizer 
+Manikanta: main : gst_element_factory_make : Create the elements inside the sink bin :convert 
+Manikanta: main : gst_element_factory_make : Create the elements inside the sink bin :sink 
+Manikanta: main : gst_bin_new : Create the sink bin  
+Manikanta: main : gst_bin_add_many : add the elements  
+Manikanta: main : gst_element_link_many : link them  
+Manikanta: main : gst_element_get_static_pad : equalizer pad 
+Manikanta: main : gst_ghost_pad_new : ghost_pad 
+Manikanta: main : gst_pad_set_active : ghost_pad 
+Manikanta: main : gst_element_add_pad : ghost_pad 
+Manikanta: main : g_object_set : Configure the equalizer 
+Manikanta: main : g_object_set : Set playbin2's audio sink to be our sink bin 
+Manikanta: main : gst_element_set_state : Start playing 
+Manikanta: main : gst_element_get_bus : Wait until error or EOS  
+Manikanta: main : gst_bus_timed_pop_filtered :   
+Manikanta: main : gst_message_unref : Free resources  
+Manikanta: main : gst_object_unref : Free resources  
+Manikanta: main : gst_element_set_state : Free resources  
+Manikanta: main : gst_object_unref : Free resources  

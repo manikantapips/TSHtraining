@@ -14,9 +14,19 @@ Command to Run playback tutorial-4
 	gcc playback-tutorial-4.c -o playback-tutorial-4 `pkg-config --cflags --libs gstreamer-1.0`
 	
 	
-	
-	
-	
+Command to Run playback tutorial-5
+	gcc playback-tutorial-5.c -o playback-tutorial-5 `pkg-config --cflags --libs gstreamer-1.0 gstreamer-video-1.0`
+
+
+Command to Run playback tutorial-6
+	gcc playback-tutorial-6.c -o playback-tutorial-6 `pkg-config --cflags --libs gstreamer-1.0`
+
+
+Command to Run playback tutorial-6
+	gcc playback-tutorial-7.c -o playback-tutorial-7 `pkg-config --cflags --libs gstreamer-1.0`
+
+
+
 	
 About gstreamer:
 

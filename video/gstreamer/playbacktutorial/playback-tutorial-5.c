@@ -18,7 +18,7 @@ update_color_channel (const gchar * channel_name, gboolean increase,
   gint value;
   GstColorBalanceChannel *channel = NULL;
   const GList *channels, *l;
-
+  printf("Manikanta : update_color_channel : gst_color_balance_list_channels : Retrieve the list of channels \n");
   /* Retrieve the list of channels and locate the requested one */
   channels = gst_color_balance_list_channels (cb);
   for (l = channels; l != NULL; l = l->next) {
@@ -34,6 +34,7 @@ update_color_channel (const gchar * channel_name, gboolean increase,
 
   /* Change the channel's value */
   step = 0.1 * (channel->max_value - channel->min_value);
+  printf("Manikanta : update_color_channel : gst_color_balance_get_value : Change the channel's value \n");
   value = gst_color_balance_get_value (cb, channel);
   if (increase) {
     value = (gint) (value + step);
@@ -44,6 +45,7 @@ update_color_channel (const gchar * channel_name, gboolean increase,
     if (value < channel->min_value)
       value = channel->min_value;
   }
+  printf("Manikanta : update_color_channel : gst_color_balance_set_value : Change the channel's value \n");  
   gst_color_balance_set_value (cb, channel, value);
 }
 
@@ -54,6 +56,7 @@ print_current_values (GstElement * pipeline)
   const GList *channels, *l;
 
   /* Output Color Balance values */
+  printf("Manikanta : print_current_values : gst_color_balance_list_channels : Output Color Balance values \n");    
   channels = gst_color_balance_list_channels (GST_COLOR_BALANCE (pipeline));
   for (l = channels; l != NULL; l = l->next) {
     GstColorBalanceChannel *channel = (GstColorBalanceChannel *) l->data;
@@ -71,7 +74,7 @@ static gboolean
 handle_keyboard (GIOChannel * source, GIOCondition cond, CustomData * data)
 {
   gchar *str = NULL;
-
+  printf("Manikanta : handle_keyboard : g_io_channel_read_line : Process keyboard input \n");    
   if (g_io_channel_read_line (source, &str, NULL, NULL,
           NULL) != G_IO_STATUS_NORMAL) {
     return TRUE;
@@ -116,9 +119,11 @@ main (int argc, char *argv[])
   GIOChannel *io_stdin;
 
   /* Initialize GStreamer */
+    printf("Manikanta : main : gst_init : Initialize GStreamer \n");    
   gst_init (&argc, &argv);
 
   /* Initialize our data structure */
+    printf("Manikanta : main : memset : Initialize our data structure \n");    
   memset (&data, 0, sizeof (data));
 
   /* Print usage map */
@@ -130,6 +135,7 @@ main (int argc, char *argv[])
       " 'Q' to quit\n");
 
   /* Build the pipeline */
+    printf("Manikanta : main : gst_parse_launch : Build the pipeline \n");    
   data.pipeline =
       gst_parse_launch
       ("playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm",
@@ -137,29 +143,40 @@ main (int argc, char *argv[])
 
   /* Add a keyboard watch so we get notified of keystrokes */
 #ifdef G_OS_WIN32
+    printf("Manikanta : main : g_io_channel_win32_new_fd : Add a keyboard watch so we get notified of keystrokes  \n");    
   io_stdin = g_io_channel_win32_new_fd (fileno (stdin));
 #else
+    printf("Manikanta : main : g_io_channel_unix_new : Add a keyboard watch so we get notified of keystrokes  \n");    
   io_stdin = g_io_channel_unix_new (fileno (stdin));
 #endif
+    printf("Manikanta : main : g_io_add_watch : Add a keyboard watch so we get notified of keystrokes  \n");    
   g_io_add_watch (io_stdin, G_IO_IN, (GIOFunc) handle_keyboard, &data);
 
   /* Start playing */
+    printf("Manikanta : main : gst_element_set_state : Start playing \n");      
   ret = gst_element_set_state (data.pipeline, GST_STATE_PLAYING);
   if (ret == GST_STATE_CHANGE_FAILURE) {
     g_printerr ("Unable to set the pipeline to the playing state.\n");
     gst_object_unref (data.pipeline);
     return -1;
   }
+    printf("Manikanta : main : print_current_values :  \n");      
   print_current_values (data.pipeline);
 
   /* Create a GLib Main Loop and set it to run */
+    printf("Manikanta : main : g_main_loop_new : Create a GLib Main Loop \n");        
   data.loop = g_main_loop_new (NULL, FALSE);
+    printf("Manikanta : main : g_main_loop_run : Create a GLib Main Loop set it to run \n");          
   g_main_loop_run (data.loop);
 
   /* Free resources */
+     printf("Manikanta : main : g_main_loop_unref : Free resources \n");           
   g_main_loop_unref (data.loop);
+       printf("Manikanta : main : g_io_channel_unref : Free resources \n");           
   g_io_channel_unref (io_stdin);
+       printf("Manikanta : main : gst_element_set_state : Free resources \n");           
   gst_element_set_state (data.pipeline, GST_STATE_NULL);
+       printf("Manikanta : main : gst_object_unref : Free resources \n");           
   gst_object_unref (data.pipeline);
   return 0;
 }

@@ -1,4 +1,5 @@
 #include <gst/gst.h>
+#include<stdio.h>
 
 /* playbin2 flags */
 typedef enum
@@ -10,6 +11,7 @@ typedef enum
 static gboolean
 filter_vis_features (GstPluginFeature * feature, gpointer data)
 {
+  printf("Manikanta: filter_vis_features : \n");
   GstElementFactory *factory;
 
   if (!GST_IS_ELEMENT_FACTORY (feature))
@@ -32,9 +34,11 @@ main (int argc, char *argv[])
   guint flags;
 
   /* Initialize GStreamer */
+  printf("Manikanta: main : gst_init : Initialize GStreamer \n");  
   gst_init (&argc, &argv);
 
   /* Get a list of all visualization plugins */
+  printf("Manikanta: main : gst_registry_feature_filter : Get a list of all visualization plugins \n");    
   list =
       gst_registry_feature_filter (gst_registry_get (), filter_vis_features,
       FALSE, NULL);
@@ -46,6 +50,7 @@ main (int argc, char *argv[])
     GstElementFactory *factory;
 
     factory = GST_ELEMENT_FACTORY (walk->data);
+  printf("Manikanta: main : gst_element_factory_get_longname : Print their names \n");        
     name = gst_element_factory_get_longname (factory);
     g_print ("  %s\n", name);
 
@@ -64,11 +69,13 @@ main (int argc, char *argv[])
   /* We have now selected a factory for the visualization element */
   g_print ("Selected '%s'\n",
       gst_element_factory_get_longname (selected_factory));
+        printf("Manikanta: main : gst_element_factory_create : We have now selected a factory for the visualization element \n");        
   vis_plugin = gst_element_factory_create (selected_factory, NULL);
   if (!vis_plugin)
     return -1;
 
   /* Build the pipeline */
+  printf("Manikanta: main : gst_parse_launch : Build the pipeline \n");        
   pipeline =
       gst_parse_launch ("playbin uri=http://radio.hbr1.com:19800/ambient.ogg",
       NULL);
@@ -76,26 +83,36 @@ main (int argc, char *argv[])
   /* Set the visualization flag */
   g_object_get (pipeline, "flags", &flags, NULL);
   flags |= GST_PLAY_FLAG_VIS;
+  printf("Manikanta: main : g_object_set : Set the visualization flag \n");          
   g_object_set (pipeline, "flags", flags, NULL);
 
   /* set vis plugin for playbin2 */
+  printf("Manikanta: main : g_object_set : set vis plugin for playbin2 \n");            
   g_object_set (pipeline, "vis-plugin", vis_plugin, NULL);
 
   /* Start playing */
+  printf("Manikanta: main : gst_element_set_state : Start playing \n");            
   gst_element_set_state (pipeline, GST_STATE_PLAYING);
 
   /* Wait until error or EOS */
+  printf("Manikanta: main : gst_element_get_bus :\n");            
   bus = gst_element_get_bus (pipeline);
+  printf("Manikanta: main : gst_bus_timed_pop_filtered : Wait until error or EOS \n");              
   msg =
       gst_bus_timed_pop_filtered (bus, GST_CLOCK_TIME_NONE,
       GST_MESSAGE_ERROR | GST_MESSAGE_EOS);
 
   /* Free resources */
-  if (msg != NULL)
-    gst_message_unref (msg);
+  if (msg != NULL){
+    printf("Manikanta: main : gst_message_unref : Free resources msg \n");              
+    gst_message_unref (msg);}
+        printf("Manikanta: main : gst_plugin_feature_list_free : Free resources list \n");              
   gst_plugin_feature_list_free (list);
+      printf("Manikanta: main : gst_object_unref : Free resources bus \n");              
   gst_object_unref (bus);
+      printf("Manikanta: main : gst_element_set_state : Free resources \n");              
   gst_element_set_state (pipeline, GST_STATE_NULL);
+      printf("Manikanta: main : gst_object_unref : Free resources pipeline \n");              
   gst_object_unref (pipeline);
   return 0;
 }
